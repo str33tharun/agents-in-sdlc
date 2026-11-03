@@ -68,7 +68,7 @@ Aunque los archivos existentes son un buen punto de partida, todavía hay alguna
 3. Añade lo siguiente como último punto debajo de ese encabezado:
 
    ```plaintext
-   All new TypeScript should contain TSDocs comments for documentation purposes.
+   Todo el código TypeScript nuevo debe incluir comentarios TSDoc con fines de documentación.
    ```
 
 El archivo se guarda automáticamente y está listo para usarlo.
@@ -83,7 +83,7 @@ Con el archivo de instrucciones actualizado, observa su efecto en el código que
 1. Pide a Copilot que utilice los archivos de instrucciones para adaptar el código a los nuevos requisitos:
 
    ```plaintext
-   We just updated our instructions and code guidance. Can you please update the code you generated to match that guidance?
+   Acabamos de actualizar las instrucciones y las directrices de programación. Actualiza el código que has generado para que las siga.
    ```
 
 2. Selecciona **Changes** en la esquina superior derecha para abrir los cambios de código.

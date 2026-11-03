@@ -22,7 +22,7 @@ Al terminar, tendrás:
 
 ## Escenario
 
-Quienes apoyan los juegos de Tailspin Toys pueden filtrarlos por categoría y editor, pero preguntas como *¿Qué juegos serían adecuados para alguien a quien le encantan los juegos de palabras sobre Git?* no se responden con un menú desplegable. Backer Concierge debe recomendar solo juegos del catálogo de Tailspin y nunca inventar juegos, editores, valoraciones, importes recaudados, cifras de patrocinadores, precios, números de jugadores, duraciones de partida ni fechas de lanzamiento. Un catálogo fiable y un modelo adecuado son la base de esas respuestas.
+Los mecenas de Tailspin Toys pueden filtrar los juegos por categoría y editorial, pero preguntas como *¿Qué juegos serían adecuados para alguien a quien le encantan los juegos de palabras sobre Git?* no se responden con un menú desplegable. Backer Concierge debe recomendar solo juegos del catálogo de Tailspin y nunca inventar juegos, editoriales, valoraciones, importes recaudados, cifras de mecenas, precios, números de jugadores, duraciones de partida ni fechas de lanzamiento. Un catálogo fiable y un modelo adecuado son la base de esas respuestas.
 
 ## Preparar las herramientas y la sesión de la incidencia
 
@@ -46,7 +46,7 @@ El repositorio de ejemplo incluye un script de exportación que proporciona al a
 8. En esta sesión del worktree vinculada a la incidencia, sustituye la indicación predeterminada `/fix-issue` del cuadro de indicaciones por:
 
    ```plaintext
-   Install the project dependencies, seed the database, then run the existing db:export script. Show me the command output and summarize the shape and grounding limits of db/catalog.json.
+   Instala las dependencias del proyecto, carga los datos iniciales en la base de datos y ejecuta el script db:export existente. Muéstrame la salida de los comandos y resume la estructura y los límites de la información de db/catalog.json en la que se pueden basar las respuestas.
    ```
 
 9. Revisa la salida de los comandos. Copilot debería ejecutar el equivalente a:
@@ -59,7 +59,7 @@ El repositorio de ejemplo incluye un script de exportación que proporciona al a
 
    ![Generar la exportación del catálogo](../../../../_images/app-8-generate-catalog-export.png)
 
-10. Abre `db/catalog.json` y confirma que contiene 21 juegos con título, descripción, categoría, editor y valoración por estrellas. Comprueba el campo `note`: el catálogo no contiene importes recaudados, cifras de patrocinadores, niveles de aportación ni fechas de lanzamiento. Considera también como no disponibles los precios, números de jugadores y duraciones de partida que falten, en lugar de rellenar los huecos con conocimientos externos. Si la exportación falla o es distinta, pide a Copilot que lo investigue y vuelva a ejecutarla antes de continuar.
+10. Abre `db/catalog.json` y confirma que contiene 21 juegos con título, descripción, categoría, editorial y valoración por estrellas. Comprueba el campo `note`: el catálogo no contiene importes recaudados, cifras de mecenas, niveles de aportación ni fechas de lanzamiento. Considera también como no disponibles los precios, números de jugadores y duraciones de partida que falten, en lugar de rellenar los huecos con conocimientos externos. Si la exportación falla o es distinta, pide a Copilot que lo investigue y vuelva a ejecutarla antes de continuar.
 
    ![Exportación del catálogo abierta en la aplicación Copilot](../../../../_images/app-8-view-catalog.png)
 
@@ -92,7 +92,7 @@ Crear primero el proyecto y la implementación en el chat permite que Canvas se 
 13. En la misma sesión de la incidencia, introduce:
 
     ```plaintext
-    Use the Microsoft Foundry skill to create a resource group named rg-tailspin-toys and a Foundry project named tailspin-toys.
+    Usa la habilidad Microsoft Foundry para crear un grupo de recursos llamado rg-tailspin-toys y un proyecto de Foundry llamado tailspin-toys.
     ```
 
     ![Crear un proyecto de Foundry](../../../../_images/app-8-foundry-project-created.png)
@@ -100,7 +100,7 @@ Crear primero el proyecto y la implementación en el chat permite que Canvas se 
 14. Pide a Copilot que recomiende un modelo. Los criterios de aceptación de la incidencia ya están en el contexto porque la sesión se inició desde ella:
 
     ```plaintext
-    Use the Microsoft Foundry skill to recommend two or three current chat models in the tailspin-toys project that meet this issue's acceptance criteria. Explain the tradeoffs and wait for me to choose.
+    Usa la habilidad Microsoft Foundry para recomendar dos o tres modelos de chat actuales del proyecto tailspin-toys que cumplan los criterios de aceptación de esta incidencia. Explica las ventajas e inconvenientes y espera a que elija uno.
     ```
 
 15. Confirma que Copilot carga la habilidad `microsoft-foundry` y elige un modelo disponible según sus ventajas e inconvenientes. La guía de inicio rápido de agentes hospedados de Microsoft Foundry utiliza actualmente `gpt-5.4-mini`, pero la disponibilidad y la cuota varían según la región.
@@ -110,7 +110,7 @@ Crear primero el proyecto y la implementación en el chat permite que Canvas se 
 16. Pide a Copilot que implemente el modelo elegido y revisa el proyecto de destino y el coste antes de aprobarlo:
 
     ```plaintext
-    Deploy the model I selected to the tailspin-toys Foundry project, using the model name as the deployment name.
+    Implementa el modelo que he seleccionado en el proyecto de Foundry tailspin-toys y usa el nombre del modelo como nombre de la implementación.
     ```
 
 > [!TIP]
@@ -129,10 +129,10 @@ Esta comprobación verifica el proyecto y el modelo antes de que exista código 
 20. En la misma sesión, escribe:
 
     ```plaintext
-    Usa la habilidad de Microsoft Foundry para probar directamente el modelo que he implementado en el proyecto tailspin-toys sin crear un agente. Basa la respuesta en el contenido de @db/catalog.json y pregunta: «Me encantan los juegos de rompecabezas sobre la búsqueda de errores. ¿Qué debería apoyar y cuánto dinero ha recaudado?». Muéstrame la respuesta y metadatos útiles, como los tokens utilizados y el tiempo de respuesta, solo si están disponibles. Usa mi sesión de Azure existente. No muestres credenciales, modifiques archivos ni crees recursos.
+    Usa la habilidad Microsoft Foundry para probar directamente el modelo que he implementado en el proyecto tailspin-toys, sin crear un agente. Basa la prueba en el contenido de @db/catalog.json y pregunta: «Me encantan los juegos de puzles sobre la búsqueda de errores. ¿Cuál debería apoyar y cuánto dinero ha recaudado?». Muéstrame la respuesta y metadatos útiles, como los tokens utilizados y el tiempo de respuesta, solo si están disponibles. Usa mi inicio de sesión de Azure existente. No muestres credenciales, cambies archivos ni crees recursos.
     ```
 
-21. Revisa la respuesta. Debe recomendar únicamente un juego real de `db/catalog.json`, usar el título, el editor y la valoración correctos, y explicar que la información de financiación no está disponible. Si el modelo inventa un juego, datos del catálogo o una cantidad de financiación, compara otro modelo recomendado antes de continuar.
+21. Revisa la respuesta. Debe recomendar únicamente un juego real de `db/catalog.json`, usar el título, la editorial y la valoración correctos, y explicar que la información de financiación no está disponible. Si el modelo inventa un juego, datos del catálogo o una cantidad de financiación, compara otro modelo recomendado antes de continuar.
 
 > [!NOTE]
 > Canvas recuerda el proyecto seleccionado cuando se vuelve a abrir. Sus etapas son **Create new hosted agents** para generar la estructura inicial, **Build current hosted agent** para conectar modelos, conjuntos de herramientas, habilidades y medidas de protección, y **Deploy and test** para las ejecuciones locales y la implementación en Microsoft Foundry.

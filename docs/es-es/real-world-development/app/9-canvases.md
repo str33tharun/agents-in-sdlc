@@ -50,7 +50,7 @@ Empieza con el lienzo Database Explorer existente del proyecto. Utilizar un ejem
 5. Pide a Copilot que prepare la base de datos local si es necesario y abra el lienzo existente sin modificarlo:
 
     ```plaintext
-    Set up the local database if needed, then open the repository's Database Explorer canvas. Do not change any files.
+    Si es necesario, prepara la base de datos local y, después, abre el lienzo Database Explorer del repositorio. No cambies ningún archivo.
     ```
 
 6. En Database Explorer, examina las tablas disponibles y selecciona `games`.
@@ -74,9 +74,9 @@ Ahora crea otro tipo de superficie compartida. Al guardar el lienzo de clasifica
 1. En la misma sesión, introduce `/create-canvas` y describe el lienzo que quieres crear:
 
    ```plaintext
-   Create a Kanban triage canvas for this repo's open issues and save it under .github/extensions/. Highlight the three issues you'd prioritize and explain why, with the rest below. Include summaries and links.
+   Crea un lienzo Kanban para clasificar las incidencias abiertas de este repositorio y guárdalo en .github/extensions/. Destaca las tres incidencias que priorizarías y explica por qué; coloca las demás debajo. Incluye resúmenes y enlaces.
 
-   Give each card an "Add to current context" action that adds the issue details without starting work or changing the issue. Make it keyboard-accessible and open it so I can try it.
+   Añade a cada tarjeta una acción «Add to current context» que incorpore los detalles de la incidencia al contexto actual sin iniciar el trabajo ni modificar la incidencia. Asegúrate de que se pueda usar con el teclado y abre el lienzo para que pueda probarlo.
    ```
 
 Copilot crea la extensión del lienzo en `.github/extensions` y abre la superficie compartida en el panel derecho de la aplicación. La extensión generada es contenido ejecutable del repositorio, no solo un recurso visual, por lo que a continuación examinarás sus archivos y su comportamiento.

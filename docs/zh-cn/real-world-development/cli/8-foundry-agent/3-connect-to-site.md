@@ -67,7 +67,7 @@ Tailspin Toys 采用完全预渲染方式。浏览器代码绝不能直接调用
     ```
 
 2. 保持本地 Function 运行，并在另一个终端中使用 Copilot 提供的命令启动 Astro 网站。
-3. 返回 Copilot CLI。在[练习 4][playwright-lesson]中添加的 Playwright MCP 服务器已可用。让 Copilot 测试组件：
+3. 返回 Copilot CLI。在[第 6 课][playwright-lesson]中检查或添加的 Playwright MCP 服务器已可用。让 Copilot 测试组件：
 
     ```text
     Use the Playwright MCP server to test the Backer Concierge widget end to end in the running Tailspin Toys site. Verify its core chat flow, conversation continuity, accessibility, error handling, grounding boundaries, and secure use of the local proxy. Report the results and include evidence for any failures.
@@ -91,6 +91,6 @@ Tailspin Toys 采用完全预渲染方式。浏览器代码绝不能直接调用
 
 [overview]: ../
 [previous-lesson]: ../2-build-and-deploy/
-[review]: ../../9-review/
-[playwright-lesson]: ../../4-mcp/
+[review]: ../../10-review/
+[playwright-lesson]: ../../6-mcp-playwright/
 [cleanup]: ../#清理资源

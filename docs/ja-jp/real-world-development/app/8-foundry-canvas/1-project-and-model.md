@@ -129,7 +129,7 @@ Tailspin Toys の支援者は、カテゴリやパブリッシャーでゲーム
 20. 同じセッションで、次のプロンプトを入力します。
 
     ```plaintext
-    Microsoft Foundry スキルを使用して、エージェントを作成せずに、tailspin-toys プロジェクトにデプロイしたモデルを直接テストしてください。@db/catalog.json の内容に基づいて、「バグを追跡するパズルゲームが大好きです。どのゲームを支援すべきですか。また、どれくらいの資金を調達していますか」と質問してください。応答と、取得できる場合に限り、使用したトークン数や応答時間などの有用なメタデータを表示してください。既存の Azure サインインを使用してください。資格情報を表示したり、ファイルを変更したり、リソースを作成したりしないでください。
+    Use the Microsoft Foundry skill to test my deployed model directly in the tailspin-toys project without creating an agent. Ground it with content from @db/catalog.json and ask: "I love puzzle games about tracking down bugs. What should I back, and how much funding has it raised?" Show me the response and useful metadata such as tokens used and response time, only if available. Use my existing Azure sign-in. Do not display credentials, change files, or create resources.
     ```
 
 21. 応答を確認します。`db/catalog.json` に実在するゲームだけを推奨し、正しいタイトル、パブリッシャー、評価を使用し、資金調達の情報がないことを説明する必要があります。モデルがゲーム、カタログの詳細、資金調達額を捏造した場合は、続行する前に別の推奨モデルと比較します。

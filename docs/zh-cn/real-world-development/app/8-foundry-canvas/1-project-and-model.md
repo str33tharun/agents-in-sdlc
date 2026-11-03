@@ -129,7 +129,7 @@ Tailspin Toys 的支持者可以按类别和发行商筛选游戏，但*哪些�
 20. 在同一会话中输入：
 
     ```plaintext
-    使用 Microsoft Foundry 技能直接测试我在 tailspin-toys 项目中部署的模型，不要创建代理。根据 @db/catalog.json 中的内容回答以下问题：“我喜欢以追踪 bug 为主题的益智游戏。我应该支持哪个游戏？它筹集了多少资金？”显示回答，并且仅在可以获取时显示所用 token 数和响应时间等有用的元数据。使用我现有的 Azure 登录身份。不要显示凭据、修改文件或创建资源。
+    Use the Microsoft Foundry skill to test my deployed model directly in the tailspin-toys project without creating an agent. Ground it with content from @db/catalog.json and ask: "I love puzzle games about tracking down bugs. What should I back, and how much funding has it raised?" Show me the response and useful metadata such as tokens used and response time, only if available. Use my existing Azure sign-in. Do not display credentials, change files, or create resources.
     ```
 
 21. 检查回答。回答应仅推荐 `db/catalog.json` 中实际存在的游戏，使用正确的标题、发行商和评分，并说明没有可用的筹款信息。如果模型编造游戏、目录详情或筹款金额，请在继续之前比较另一个推荐模型。

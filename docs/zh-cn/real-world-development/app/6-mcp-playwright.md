@@ -39,8 +39,8 @@ lastUpdated: 2026-07-09
 通过侧边栏中的 **Customize** 管理 MCP 服务器。在存储库或 Copilot CLI 中配置的服务器可能已在 app 中可用，因此添加前先检查，避免重复。[App 自定义文档][customize-app]介绍了可用选项。
 
 1. 在侧边栏中选择 **Customize**。
-2. 选择 **MCP**，再检查 **Installed** 中是否已有 Playwright 服务器。
-3. 如有需要，在可用服务器中找到 **Playwright**，或使用发布者文档说明的自定义服务器流程。
+2. 打开 **All types** 下拉列表并选择 **MCP**，然后检查 **Installed** 中是否已有 Playwright 服务器。
+3. 如果尚未安装 Playwright，请在可用服务器中找到 **Playwright**，然后选择 **Add server**。
 4. 批准前审查发布者、配置和所有安装提示。按提示添加服务器；组织策略或缺少先决条件可能阻止设置。
 5. 返回 **Interactive** 模式的筛选会话，确认 Playwright MCP 工具可用。
 
@@ -56,12 +56,12 @@ lastUpdated: 2026-07-09
     Start the app and use Playwright MCP to check filtering against the issue and our plan. Tell me what works and what doesn't, without making changes. Stop the server you started when you're done.
     ```
 
-  > [!NOTE]
-  > 不必明确要求 Copilot 使用特定 MCP 服务器；它通常会根据当前上下文找到合适的服务器。不过，明确指出你认为重要的信息始终是合理做法。
+> [!NOTE]
+> 不必明确要求 Copilot 使用特定 MCP 服务器；它通常会根据当前上下文找到合适的服务器。不过，明确指出你认为重要的信息始终是合理做法。
 
-  2. 接下来只需观察其操作。
+2. 接下来只需观察其操作。
 
-  Copilot 会启动服务器、打开浏览器并与网站交互。完成后，它会停止服务器并提供报告。
+Copilot 会启动服务器、打开浏览器并与网站交互。完成后，它会停止服务器并提供报告。
 
 ## 总结与后续步骤
 

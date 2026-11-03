@@ -29,7 +29,7 @@ Review the space quiz and create three focused GitHub issues with clear titles, 
 2. Resalta la primera incidencia y pulsa <kbd>c</kbd> para añadirla al chat como contexto. Para leer primero la incidencia completa, pulsa <kbd>Enter</kbd> en su lugar.
 3. Pide al agente que implemente la incidencia.
 
-![Ilustración del panel lateral de Copilot CLI en una terminal. La pestaña Issues está seleccionada entre las pestañas Current, Sessions, Issues, Pull requests y Gists. Un filtro de búsqueda de incidencias abiertas en el repositorio space-quiz muestra una incidencia, Añadir una pantalla de puntuación al final del cuestionario. Las indicaciones explican que la tecla Left arrow abre el panel y Tab permite moverse entre pestañas; la fila inferior enumera las teclas: barra para buscar, Enter para ver detalles, o para abrir, w para el árbol de trabajo, c para el chat y a para todo.](../../../_images/first-steps-cli-side-panel.svg)
+![Ilustración del panel lateral de Copilot CLI en una terminal. La pestaña Issues está seleccionada entre las pestañas Current, Sessions, Issues, Pull requests y Gists. Un filtro de búsqueda de incidencias abiertas en el repositorio space-quiz muestra una incidencia, Añadir una pantalla de puntuación al final del cuestionario. Las indicaciones explican que la tecla Left arrow abre el panel y Tab permite moverse entre pestañas; la fila inferior enumera las teclas: / para buscar, Enter para ver detalles, o para abrir, w para el árbol de trabajo, c para el chat y a para todo.](../../../_images/first-steps-cli-side-panel.svg)
 
 El panel lateral muestra todas las pestañas en la parte superior, y las indicaciones de la parte inferior son las teclas que actúan sobre el elemento resaltado.
 

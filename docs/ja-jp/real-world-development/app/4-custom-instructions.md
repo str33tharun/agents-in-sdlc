@@ -64,8 +64,9 @@ lastUpdated: 2026-07-09
 > 指示ファイルは Copilot が生成するコードに大きな影響を与えるため、Copilot を明確にガイドする内容になっていることを慎重に確認してください。Copilot で最初のバージョンを作成した後、自分でレビューして更新内容が要件を満たすことを確認できます。また、出発点として役立つ[指示ファイルのコレクションを Awesome Copilot で][awesome-copilot]確認できます。
 
 1. 同じファイルキャンバスで `.github/copilot-instructions.md` に移動します。
-2. ファイルの中ほどにある **Code formatting requirements** 見出しを見つけます。
-3. その見出しの下にある最後の箇条書きとして、次の内容を追加します。
+2. ファイルツールバーのコードボタン (`<>` アイコン) を選択し、編集可能なソースビューに切り替えます。
+3. ファイルの中ほどにある **Code formatting requirements** 見出しを見つけます。
+4. その見出しの下にある最後の箇条書きとして、次の内容を追加します。
 
    ```plaintext
    All new TypeScript should contain TSDocs comments for documentation purposes.

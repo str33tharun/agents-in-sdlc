@@ -39,8 +39,8 @@ lastUpdated: 2026-07-09
 MCP server は、サイドバーの **Customize** で管理します。リポジトリや Copilot CLI 向けに設定されたサーバーは App でも利用できる場合があるため、重複して追加する前に確認してください。[App のカスタマイズドキュメント][customize-app]で利用可能な選択肢を確認できます。
 
 1. サイドバーで **Customize** を選択します。
-2. **MCP** を選択し、**Installed** で既存の Playwright サーバーを確認します。
-3. 必要な場合は利用可能なサーバーから **Playwright** を探すか、発行元が文書化したカスタムサーバーの追加手順を使用します。
+2. **All types** ドロップダウンを開いて **MCP** を選択し、**Installed** で既存の Playwright サーバーを確認します。
+3. Playwright がまだインストールされていない場合は、利用可能なサーバーから **Playwright** を探して **Add server** を選択します。
 4. 発行元、設定、インストールの確認内容をレビューしてから承認します。画面の案内に従ってサーバーを追加してください。組織のポリシーや前提条件の不足により、セットアップがブロックされる場合があります。
 5. **Interactive** モードでフィルター機能のセッションに戻り、Playwright MCP のツールが利用できることを確認します。
 
@@ -56,12 +56,12 @@ Issue と計画時の決定事項は、すでにコンテキストに含まれ�
     Start the app and use Playwright MCP to check filtering against the issue and our plan. Tell me what works and what doesn't, without making changes. Stop the server you started when you're done.
     ```
 
-  > [!NOTE]
-  > 使用する MCP server を Copilot に明示する必要はありません。通常は現在のコンテキストに基づいて適切なものを見つけます。ただし、重要だと考える情報を Copilot に伝えても問題はありません。
+> [!NOTE]
+> 使用する MCP server を Copilot に明示する必要はありません。通常は現在のコンテキストに基づいて適切なものを見つけます。ただし、重要だと考える情報を Copilot に伝えても問題はありません。
 
-  2. あとは動作を見守ります。
+2. あとは動作を見守ります。
 
-  Copilot はサーバーを起動してブラウザーを開き、Web サイトを操作します。完了するとサーバーを停止し、レポートを提供します。
+Copilot はサーバーを起動してブラウザーを開き、Web サイトを操作します。完了するとサーバーを停止し、レポートを提供します。
 
 ## まとめと次のステップ
 

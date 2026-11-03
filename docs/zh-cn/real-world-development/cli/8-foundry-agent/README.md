@@ -48,21 +48,21 @@ Tailspin Toys 希望打造一个 **Backer Concierge** 礼宾助手，通过对�
 > [!CAUTION]
 > 只有当 `rg-tailspin-toys` 专用于本练习，且不包含任何需要保留的资源时，才可将其删除。删除共享资源组也会移除与本练习无关的资源。
 
-1. 在各自的终端中按 <kbd>Ctrl</kbd>+<kbd>C</kbd>，停止此前启动的所有本地智能体、Function 或 Astro 开发服务器。
-2. 退出 Copilot CLI。如果在模块 2 中生成了智能体脚手架，请在 Tailspin Toys 存储库根目录中，使用同一个 `azd` 环境运行以下命令：
+1. 在相应终端中按 <kbd>Ctrl</kbd>+<kbd>C</kbd>，停止此前启动的本地智能体、Function 或 Astro 开发服务器。
+2. 退出 Copilot CLI。如果在模块 2 中生成了智能体，请在 Tailspin Toys 存储库根目录中使用相同的 `azd` 环境运行：
 
     ```bash
     azd down --purge
     ```
 
-3. 使用 `az account show` 检查所选订阅。查看该订阅中的 `rg-tailspin-toys`，确认所有剩余资源都属于本练习。如果在模块 1 后停止，即使尚未生成 `azd` 服务脚手架，也仍需清理 Foundry 项目和模型。
-4. 如果工作坊专用资源组仍然存在，且仅包含打算移除的资源，请运行：
+3. 运行 `az account show` 检查当前选择的订阅。在该订阅中检查 `rg-tailspin-toys`，并确认所有剩余资源都属于本练习。如果在模块 1 后停止，即使尚未生成 `azd` 服务，也仍需清理 Foundry 项目和模型。
+4. 如果专用研讨会资源组仍然存在，且仅包含打算移除的资源，请运行：
 
     ```bash
     az group delete --name rg-tailspin-toys --yes --no-wait
     ```
 
-5. 在 Azure 门户中确认资源组删除已完成。`--no-wait` 命令会在删除完成前返回。
+5. 在 Azure 门户中确认资源组已删除。`--no-wait` 命令会在删除完成前返回。
 
 ## 资源
 
@@ -74,7 +74,7 @@ Tailspin Toys 希望打造一个 **Backer Concierge** 礼宾助手，通过对�
 [project-model]: 1-project-and-model/
 [build-deploy]: 2-build-and-deploy/
 [connect-site]: 3-connect-to-site/
-[review]: ../9-review/
+[review]: ../10-review/
 [cleanup]: #清理资源
 [azure-skills]: https://github.com/microsoft/azure-skills#github-copilot-cli
 [foundry-skill]: https://learn.microsoft.com/azure/foundry/how-to/develop/use-microsoft-foundry-skill?tabs=copilot-cli
